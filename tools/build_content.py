@@ -479,6 +479,23 @@ for s in sentences:
         })
 questions.extend(practice)
 
+# ---- rule-currency verdicts: quarantine questions that teach a dead rule --
+VERDICTS = {}
+_vp = D("tools", "rule_verdicts.json")
+if os.path.exists(_vp):
+    VERDICTS = {k: v for k, v in load("tools/rule_verdicts.json").items() if not k.startswith("_")}
+n_outdated = 0
+for q in questions:
+    v = VERDICTS.get(q["id"])
+    if not v:
+        continue
+    q["status"] = v["verdict"]
+    if v["verdict"] == "outdated":
+        q["supersededBy"] = v.get("note", "")
+        q["supersededRule"] = v.get("rule", "")
+        n_outdated += 1
+print(f"  rule-currency: {len(VERDICTS)} reviewed, {n_outdated} quarantined as outdated")
+
 # ---------------- comprehension corpus (real exam wording, no answer) -----
 comp = []
 for q in cb:
@@ -530,7 +547,7 @@ for n, slug, title, sub, icon, p0, p1 in TOPICS:
                    "keywords": list(TOPIC_KEYS.get(n, {}))[:25]})
 
 meta = {
-    "contentVersion": 1,
+    "contentVersion": 2,
     "built": "2026-11-15",
     "exam": {"questions": 30, "maxWrong": 3},
     "sources": [
@@ -556,7 +573,10 @@ meta["totals"] = {"topics": len(topics), "terms": len(terms), "sentences": len(s
                   "questions": len(questions),
                   "official": sum(1 for q in questions if q["origin"] == "official"),
                   "practice": sum(1 for q in questions if q["origin"] == "practice"),
-                  "comprehension": len(comp), "grammar": len(grammar), "lexicon": len(LEX)}
+                  "comprehension": len(comp), "grammar": len(grammar), "lexicon": len(LEX),
+                  "quarantined": n_outdated,
+                  "officialActive": sum(1 for q in questions
+                                        if q["origin"] == "official" and q.get("status") != "outdated")}
 save("meta.json", meta)
 
 print("\nsummary")

@@ -219,6 +219,14 @@ export function SettingsView({ settings, reload, onToast }) {
           Dirección General de Tráfico. Las marcadas <b>Práctica</b> las genera esta app a partir
           de frases del manual y siempre citan su origen. Nunca se presentan como oficiales.
         </div>
+        ${C.meta?.totals?.quarantined > 0 && html`
+          <div class="banner info" style="margin-top:10px">
+            <b>${C.meta.totals.quarantined} preguntas oficiales están apartadas.</b>
+            Son anteriores a un cambio de norma (baliza V-16 desde el 1-1-2026 y velocidades
+            urbanas 20/30/50 desde el 11-5-2021) y enseñarían una regla que ya no está vigente.
+            No aparecen ni en las lecciones ni en el examen.
+            Quedan <b>${C.meta.totals.officialActive}</b> preguntas oficiales en uso.
+          </div>`}
       </div>
 
       <div class="card">

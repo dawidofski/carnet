@@ -3,7 +3,7 @@ import { db } from "./db.js";
 /** In-memory content indexes. Loaded once from IndexedDB after seeding. */
 export const C = {
   topics: [], terms: [], sentences: [], questions: [], grammar: [],
-  comprehension: [], lexicon: new Map(), meta: null,
+  comprehension: [], lexicon: new Map(), meta: null, quarantined: [],
   byId: new Map(),
   termsByTopic: new Map(),
   sentencesByTopic: new Map(),
@@ -32,14 +32,19 @@ export async function loadContent() {
   C.topics = topics.sort((a, b) => a.n - b.n);
   C.terms = terms;
   C.sentences = sentences;
-  C.questions = questions;
+  // Questions whose rule has since changed are kept in the database for
+  // transparency but must never be asked. Filter once, here, so no caller
+  // can forget.
+  C.quarantined = questions.filter((q) => q.status === "outdated");
+  C.questions = questions.filter((q) => q.status !== "outdated");
+  const active = C.questions;
   C.grammar = grammar.sort((a, b) => b.hits - a.hits);
   C.comprehension = comprehension;
   C.meta = metaRow?.value || null;
 
   C.lexicon = new Map(lex.map((r) => [r.w, r]));
   C.byId = new Map();
-  for (const arr of [terms, sentences, questions, grammar, comprehension]) {
+  for (const arr of [terms, sentences, active, grammar, comprehension]) {
     for (const o of arr) C.byId.set(o.id, o);
   }
 
@@ -48,7 +53,7 @@ export async function loadContent() {
   C.questionsByTopic = new Map();
   for (const t of terms) push(C.termsByTopic, t.topic, t);
   for (const s of sentences) push(C.sentencesByTopic, s.topic, s);
-  for (const q of questions) push(C.questionsByTopic, q.topic, q);
+  for (const q of active) push(C.questionsByTopic, q.topic, q);
 
   // which sentences / questions actually contain each term
   C.sentencesByTerm = new Map();
@@ -63,7 +68,7 @@ export async function loadContent() {
   const termHeads = terms
     .filter((t) => t.head && t.head.length > 4)
     .map((t) => [nrm(t.head), t.id]);
-  for (const q of questions) {
+  for (const q of active) {
     const blob = nrm(q.q + " " + (q.options || []).join(" "));
     for (const [h, id] of termHeads) {
       if (blob.includes(h)) push(C.questionsByTerm, id, q);

@@ -49,7 +49,7 @@ Then open `http://localhost:8123`. It must be served over http — opening
 |---|---|
 | **324** vocabulary entries | your own 297-word list, corrected, plus DGT's own definitions |
 | **222** exam-fact sentences | every word tappable for its meaning |
-| **797** official DGT questions | scraped from `revista.dgt.es`, with verified answers and photos |
+| **791** official DGT questions | scraped from `revista.dgt.es`, with verified answers and photos (6 more are quarantined as out of date) |
 | **508** practice questions | generated from the manuals, each citing its source |
 | **2,927** real exam questions | authentic wording, used for comprehension training |
 | **610** dictionary entries | powers tap-any-word translation everywhere |
@@ -59,6 +59,12 @@ Then open `http://localhost:8123`. It must be served over http — opening
 Every item carries its source. Questions are labelled **Oficial DGT**,
 **Práctica** or **Comprensión**, and the exam simulator draws **only** from the
 official pool — enforced in code, not by convention.
+
+The official questions span 2014–2026, and Spanish law changed in May 2021,
+March 2022 and January 2026. `tools/rule_currency.py` flags every question that
+touches a changed rule; each one is then judged by hand and the verdict recorded
+in `tools/rule_verdicts.json`. Anything that would teach a dead rule is
+quarantined at load time and can never reach a lesson or the exam.
 
 ---
 

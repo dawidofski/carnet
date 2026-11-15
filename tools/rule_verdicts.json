@@ -1,0 +1,31 @@
+{
+"_doc": "Hand review of every question flagged by tools/rule_currency.py. verdict: outdated = teaches a superseded rule, excluded from all question pools. current = checked and still correct under today's law. Reviewed 2026-11-15 against DGT sources; see ANALYSIS-PHASE1.md §7.",
+
+"q4d83d63fe2": { "verdict": "outdated", "rule": "v16", "note": "La respuesta correcta exige colocar los triángulos de preseñalización. Desde el 1-1-2026 el único medio legal es la baliza V-16 conectada. La obligación de señalizar sigue existiendo; el método ya no." },
+"q903e19a033": { "verdict": "outdated", "rule": "v16", "note": "La respuesta correcta dice «se emplearán los triángulos de preseñalización». Sustituidos por la baliza V-16 conectada desde el 1-1-2026." },
+"q0105a32ea4": { "verdict": "outdated", "rule": "v16", "note": "Dice que es obligatorio llevar dos triángulos homologados. Desde el 1-1-2026 lo obligatorio es la baliza V-16 conectada." },
+"q343da109cf": { "verdict": "outdated", "rule": "v16", "note": "La respuesta correcta exige colocar los triángulos. Sustituidos por la V-16 conectada desde el 1-1-2026." },
+
+"q0d561cad04": { "verdict": "outdated", "rule": "urbana", "note": "Da 50 km/h como velocidad genérica en travesía. Desde el 11-5-2021 depende de la configuración: 20 km/h en plataforma única, 30 km/h con un carril por sentido, 50 km/h con dos o más. Además la pregunta se apoya en el margen para adelantar, suprimido en 2022." },
+"q5772c10e09": { "verdict": "outdated", "rule": "urbana", "note": "Da 50 km/h como velocidad genérica en vía urbana. Desde el 11-5-2021 son 20/30/50 km/h según los carriles por sentido." },
+
+"q6b8ebc0ece": { "verdict": "current", "rule": "v16", "note": "Falso positivo: habla de una señal triangular de peligro, no de los triángulos de preseñalización." },
+"q427baee174": { "verdict": "current", "rule": "v16", "note": "La respuesta correcta es evacuar el vehículo en un paso a nivel, que no ha cambiado. Los triángulos solo aparecen en un distractor, que hoy es aún más incorrecto." },
+
+"q03f605b69f": { "verdict": "current", "rule": "margen20", "note": "La respuesta correcta (80 km/h en autopista dentro de poblado) sigue vigente. El margen de 20 km/h solo aparece en un distractor, que hoy es doblemente falso." },
+
+"q027df4b029": { "verdict": "current", "rule": "ciclistas", "note": "Falso positivo: trata del significado de una señal de carril reservado a ciclos, que no ha cambiado." },
+"q61a1a36022": { "verdict": "current", "rule": "ciclistas", "note": "La separación lateral mínima de 1,5 m sigue vigente; la reforma de 2022 la reforzó, no la cambió." },
+"qdf7491610f": { "verdict": "current", "rule": "ciclistas", "note": "La prioridad del carril bici al incorporarse a la vía principal no ha cambiado." },
+
+"q296bd674b4": { "verdict": "current", "rule": "alcohol", "note": "0,15 mg/l aire = 0,3 g/l sangre para noveles sigue siendo la tasa vigente. La rebaja general a 0,2 g/l fue rechazada en el Congreso en marzo de 2026." },
+"q81c3e13d08": { "verdict": "current", "rule": "alcohol", "note": "0,15 mg/l para el primer permiso sigue vigente." },
+"qfc1df89858": { "verdict": "current", "rule": "alcohol", "note": "Igual que q296bd674b4: tasa de noveles sin cambios." },
+"q567800c94d": { "verdict": "current", "rule": "alcohol", "note": "Efectos del alcohol sobre la visión; no depende de ninguna tasa." },
+"q79eb6f005c": { "verdict": "current", "rule": "alcohol", "note": "0,15 mg/l para permisos de menos de 2 años sigue vigente." },
+"q2deea7504e": { "verdict": "current", "rule": "alcohol", "note": "Trata de cuándo cesa la inmovilización del vehículo; sin cambios." },
+"q49f2c4ae3f": { "verdict": "current", "rule": "alcohol", "note": "0,15 mg/l para un permiso de un año de antigüedad sigue vigente." },
+
+"qaa2d94342a": { "verdict": "current", "rule": "vmp", "note": "Trata de patines y monopatines como peatones, no de VMP. Prohibido ser arrastrado por otro vehículo: sin cambios." },
+"qc00417b179": { "verdict": "current", "rule": "vmp", "note": "Falso positivo: «patinan» se refiere a las ruedas motrices sobre barro." }
+}
