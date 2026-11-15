@@ -280,3 +280,65 @@ export async function storageEstimate() {
   const e = await navigator.storage.estimate();
   return { usage: e.usage || 0, quota: e.quota || 0 };
 }
+
+/* ------------------------------------------------------- persistent storage
+   Without this the browser is allowed to evict IndexedDB under storage
+   pressure, which would silently wipe every review. Chrome and Safari decide
+   from engagement heuristics and usually grant it without a prompt; Firefox
+   shows a permission prompt. So we do NOT ask on the very first paint — we
+   wait until there is progress worth protecting, which is also when the
+   heuristics are most likely to say yes and when a prompt makes sense. */
+
+const PERSIST_KEY = "persistState";
+const RETRY_AFTER = 7 * 86400000;
+const MAX_AUTO_ASKS = 4;
+
+export async function persistenceState() {
+  if (!navigator.storage?.persisted) return { supported: false, granted: false };
+  try {
+    return { supported: true, granted: await navigator.storage.persisted() };
+  } catch {
+    return { supported: false, granted: false };
+  }
+}
+
+/**
+ * Ask the browser to keep this site's data.
+ * Self-throttling: retries at most once a week, and gives up asking by itself
+ * after a few refusals. `force: true` (the Settings button) ignores both.
+ */
+export async function ensurePersistence({ force = false, minReviews = 5 } = {}) {
+  if (!navigator.storage?.persist) return { supported: false, granted: false, asked: false };
+  let already = false;
+  try {
+    already = await navigator.storage.persisted();
+  } catch {
+    return { supported: false, granted: false, asked: false };
+  }
+  if (already) return { supported: true, granted: true, asked: false };
+
+  const rec = (await db.settings.get(PERSIST_KEY))?.value || { asks: 0, last: 0 };
+  if (!force) {
+    if (await db.reviews.count() < minReviews) {
+      return { supported: true, granted: false, asked: false, reason: "no-data-yet" };
+    }
+    if (Date.now() - (rec.last || 0) < RETRY_AFTER) {
+      return { supported: true, granted: false, asked: false, reason: "asked-recently" };
+    }
+    if ((rec.asks || 0) >= MAX_AUTO_ASKS) {
+      return { supported: true, granted: false, asked: false, reason: "gave-up" };
+    }
+  }
+
+  let granted = false;
+  try {
+    granted = await navigator.storage.persist();
+  } catch {
+    granted = false;
+  }
+  await db.settings.put({
+    key: PERSIST_KEY,
+    value: { asks: (rec.asks || 0) + 1, last: Date.now(), granted },
+  });
+  return { supported: true, granted, asked: true };
+}

@@ -1,6 +1,6 @@
 import { render } from "preact";
 import { html, useState, useEffect, useCallback, Toast, useToast } from "./ui/common.js";
-import { db, seedContent, getSettings, countDue, streakInfo, todayKey } from "./lib/db.js";
+import { db, seedContent, getSettings, countDue, streakInfo, todayKey, ensurePersistence } from "./lib/db.js";
 import { loadContent, C, officialOf, pick } from "./lib/content.js";
 import { buildLesson, exQuestion } from "./lib/session.js";
 import * as speech from "./lib/speech.js";
@@ -73,6 +73,8 @@ function App({ initial }) {
   async function finishPlayer() {
     setPlayer(null);
     await reload();
+    // There is now progress worth keeping; ensurePersistence throttles itself.
+    ensurePersistence().catch(() => {});
   }
 
   if (player) {
@@ -144,6 +146,9 @@ async function main() {
       html`<${App} initial=${{ settings, due, streak: s.streak, xp: today?.xp || 0 }} />`,
       document.getElementById("root")
     );
+
+    // Returning users: protect existing progress without blocking the first paint.
+    setTimeout(() => ensurePersistence().catch(() => {}), 2500);
 
     if ("serviceWorker" in navigator && location.protocol !== "file:") {
       navigator.serviceWorker.register(new URL("../sw.js", import.meta.url), {

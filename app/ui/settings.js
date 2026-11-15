@@ -2,13 +2,14 @@ import { html, useState, useEffect, useRef } from "./common.js";
 import { C } from "../lib/content.js";
 import {
   db, setSetting, exportBackup, importBackup, validateBackup, diffBackup,
-  undoImport, wipeProgress, storageEstimate,
+  undoImport, wipeProgress, storageEstimate, persistenceState, ensurePersistence,
 } from "../lib/db.js";
 import * as speech from "../lib/speech.js";
 
 export function SettingsView({ settings, reload, onToast }) {
   const [voices, setVoices] = useState([]);
   const [storage, setStorage] = useState(null);
+  const [persist, setPersist] = useState(null);
   const [pending, setPending] = useState(null);     // { obj, diff }
   const [confirmWipe, setConfirmWipe] = useState(false);
   const [hasSnapshot, setHasSnapshot] = useState(false);
@@ -17,6 +18,7 @@ export function SettingsView({ settings, reload, onToast }) {
   useEffect(() => {
     setVoices(speech.spanishVoices());
     storageEstimate().then(setStorage);
+    persistenceState().then(setPersist);
     db.settings.get("preImportSnapshot").then((r) => setHasSnapshot(!!r));
     const t = setTimeout(() => setVoices(speech.refreshVoices()), 600);
     return () => clearTimeout(t);
@@ -182,13 +184,26 @@ export function SettingsView({ settings, reload, onToast }) {
           <div class="kpi"><b>${C.meta?.totals?.official ?? 0}</b><span>preguntas DGT</span></div>
           <div class="kpi"><b>${C.meta?.totals?.comprehension ?? 0}</b><span>preguntas reales</span></div>
         </div>
-        <button class="btn ghost block" style="margin-top:12px"
-          onClick=${async () => {
-            if (navigator.storage?.persist) {
-              const ok = await navigator.storage.persist();
-              onToast(ok ? "Almacenamiento protegido" : "El navegador no lo ha concedido");
-            } else onToast("No disponible en este navegador");
-          }}>Pedir almacenamiento permanente</button>
+        ${persist && (persist.granted
+          ? html`<div class="banner ok" style="margin-top:12px">
+              <b>✅ Almacenamiento protegido.</b> El navegador se ha comprometido a no borrar
+              tu progreso para hacer sitio. Aun así, si borras los datos del sitio a mano,
+              se pierde: descarga una copia de vez en cuando.
+            </div>`
+          : html`
+            <div class="banner warn" style="margin-top:12px">
+              <b>Almacenamiento no protegido.</b> Tu progreso está guardado, pero el navegador
+              podría borrarlo si el dispositivo se queda sin espacio.
+              ${!persist.supported ? " Este navegador no permite protegerlo." : ""}
+            </div>
+            ${persist.supported && html`
+              <button class="btn block" onClick=${async () => {
+                const r = await ensurePersistence({ force: true });
+                setPersist(await persistenceState());
+                onToast(r.granted
+                  ? "Almacenamiento protegido"
+                  : "El navegador no lo ha concedido todavía");
+              }}>Proteger mi progreso</button>`}`)}
       </div>
 
       <div class="card">

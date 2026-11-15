@@ -2,7 +2,7 @@
    App shell + content JSON are precached so the whole app works offline.
    Question photos are cached as they are seen, with a size cap. */
 
-const VERSION = "v3";
+const VERSION = "v4";
 const SHELL = `micarnet-shell-${VERSION}`;
 const DATA = `micarnet-data-${VERSION}`;
 const MEDIA = `micarnet-media-${VERSION}`;

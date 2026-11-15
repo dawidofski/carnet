@@ -161,7 +161,7 @@ a { color: var(--accent); }
 .btn.danger { background: var(--bad); color: #fff; box-shadow: 0 4px 0 #b53f36; }
 .btn.block { width: 100%; }
 .btn[disabled] { opacity: .45; pointer-events: none; }
-.btn.sm { padding: 8px 13px; font-size: 13px; border-radius: 11px; }
+.btn.sm { padding: 8px 13px; font-size: 13px; border-radius: 11px; min-height: 40px; }
 
 .chipbar { display: flex; gap: 8px; flex-wrap: wrap; }
 .chip {
