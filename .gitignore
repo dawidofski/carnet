@@ -1,0 +1,18 @@
+# Source PDFs — your study material, not part of the app.
+# carnetb.pdf alone is 138 MB and GitHub rejects files over 100 MB.
+*.pdf
+wordsheet.html
+
+# Intermediate extraction output. Regenerate with the scripts in tools/.
+build/
+
+# Local tooling
+.venv/
+venv/
+__pycache__/
+*.pyc
+.claude/launch.json
+
+# OS noise
+.DS_Store
+Thumbs.db

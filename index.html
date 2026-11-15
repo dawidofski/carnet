@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mi Carnet</title>
+<meta name="description" content="Aprende español y la teórica del permiso B al mismo tiempo.">
+<meta name="theme-color" content="#27ae60">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icon-180.png">
+<link rel="stylesheet" href="./app/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "preact": "./app/vendor/preact.mjs",
+    "preact/hooks": "./app/vendor/hooks.mjs",
+    "htm": "./app/vendor/htm.mjs",
+    "dexie": "./app/vendor/dexie.mjs"
+  }
+}
+</script>
+</head>
+<body>
+<div id="root">
+  <div class="splash">
+    <div>
+      <div class="logo">🚦</div>
+      <h1>Mi Carnet</h1>
+      <p id="boot-msg">Cargando…</p>
+      <div class="bar"><i id="boot-bar" style="width:8%"></i></div>
+    </div>
+  </div>
+</div>
+<noscript>
+  <div style="padding:24px;font-family:system-ui">
+    <h1>Mi Carnet</h1>
+    <p>Esta aplicación necesita JavaScript. / This app needs JavaScript enabled.</p>
+  </div>
+</noscript>
+<script type="module" src="./app/main.js"></script>
+</body>
+</html>

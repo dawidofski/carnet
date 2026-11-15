@@ -1,0 +1,5 @@
+# Keep the repo LF-only; these files are served as-is by GitHub Pages.
+* text=auto eol=lf
+*.png binary
+*.webp binary
+*.svg text eol=lf

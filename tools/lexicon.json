@@ -1,0 +1,2443 @@
+{
+"_doc": "Tap-any-word dictionary. key = exact lowercase token as it appears in the corpus. value = [english, optional grammar/usage note]. Covers the function words and high-frequency forms that the 222 frases and the official questions are built from.",
+"se": [
+"(impersonal / reflexive marker)",
+"In 'se debe', 'se prohíbe', 'se permite' it makes the sentence impersonal: 'one must', 'it is prohibited'. This is the single most common word in DGT texts."
+],
+"debe": [
+"must, has to",
+"3rd person of *deber*. Marks a legal obligation."
+],
+"deben": [
+"must (plural)",
+"From *deber*."
+],
+"deberá": [
+"shall / must (future obligation)",
+"Formal legal future. Same force as *debe*."
+],
+"deberán": [
+"shall / must (plural)",
+""
+],
+"debes": [
+"you must",
+""
+],
+"debería": [
+"should",
+"Weaker than *debe* — advice, not obligation."
+],
+"puede": [
+"can, may",
+"Permission or possibility. Contrast with *debe* = obligation."
+],
+"pueden": [
+"can, may (plural)",
+""
+],
+"pueda": [
+"can (subjunctive)",
+"Used after *si*, *cuando*, *siempre que*."
+],
+"podrá": [
+"may, will be allowed to",
+""
+],
+"permite": [
+"allows, permits",
+""
+],
+"permiten": [
+"allow (plural)",
+""
+],
+"permitido": [
+"permitted, allowed",
+"Learn as a set with *prohibido* and *obligatorio*."
+],
+"prohibido": [
+"prohibited, forbidden",
+"Learn as a set with *permitido* and *obligatorio*."
+],
+"prohibida": [
+"prohibited (fem.)",
+""
+],
+"prohíbe": [
+"prohibits",
+""
+],
+"prohibición": [
+"prohibition, ban",
+""
+],
+"obligatorio": [
+"compulsory, mandatory",
+"Learn as a set with *permitido* and *prohibido*."
+],
+"obliga": [
+"obliges, requires",
+""
+],
+"obligados": [
+"obliged, required (plural)",
+""
+],
+"exige": [
+"requires, demands",
+""
+],
+"es": [
+"is",
+""
+],
+"son": [
+"are",
+""
+],
+"está": [
+"is (state/location)",
+"*está prohibido* = is prohibited."
+],
+"están": [
+"are (state/location)",
+""
+],
+"ser": [
+"to be (permanent)",
+""
+],
+"sea": [
+"is / be (subjunctive)",
+"Appears after *siempre que*, *cuando*, *salvo que*."
+],
+"sean": [
+"are / be (subjunctive, plural)",
+""
+],
+"hay": [
+"there is, there are",
+""
+],
+"haya": [
+"there is (subjunctive)",
+""
+],
+"tienen": [
+"have",
+""
+],
+"tiene": [
+"has",
+""
+],
+"llevar": [
+"to carry, to have on board, to wear",
+"*llevar chaleco* = to wear a vest; *llevar encendida la luz* = to have the light on."
+],
+"llevan": [
+"carry, wear",
+""
+],
+"si": [
+"if",
+"No accent = 'if'. With an accent, *sí* = 'yes'."
+],
+"que": [
+"that, which, who",
+""
+],
+"cuando": [
+"when",
+"Followed by the subjunctive when it refers to the future."
+],
+"salvo": [
+"except, except for, unless",
+"⚠ The most common exception marker in the exam. *salvo excepciones* = except in certain cases. It very often flips the correct answer."
+],
+"excepto": [
+"except",
+"Same function as *salvo*."
+],
+"excepciones": [
+"exceptions",
+""
+],
+"aunque": [
+"although, even if",
+"Concessive: what follows does not prevent the main statement."
+],
+"siempre": [
+"always",
+""
+],
+"siempre que": [
+"provided that, as long as",
+"Condition, not frequency. Takes the subjunctive."
+],
+"a menos que": [
+"unless",
+"Takes the subjunctive."
+],
+"mientras": [
+"while, as long as",
+""
+],
+"solo": [
+"only",
+""
+],
+"únicamente": [
+"only, solely",
+""
+],
+"según": [
+"according to, depending on",
+""
+],
+"normalmente": [
+"normally, as a rule",
+""
+],
+"general": [
+"general",
+"*como norma general* = as a general rule — signals that exceptions exist."
+],
+"genérica": [
+"generic, default (limit)",
+"*velocidad genérica* = the default limit when no sign says otherwise."
+],
+"como": [
+"as, like",
+""
+],
+"pero": [
+"but",
+""
+],
+"ni": [
+"nor, not even",
+"*ni … ni* = neither … nor."
+],
+"sin": [
+"without",
+""
+],
+"hasta": [
+"up to, until",
+""
+],
+"desde": [
+"from, since",
+""
+],
+"entre": [
+"between, among",
+""
+],
+"dentro": [
+"inside, within",
+"*dentro de poblado* = inside a built-up area."
+],
+"fuera": [
+"outside",
+"*fuera de poblado* = outside a built-up area. Many rules differ between the two."
+],
+"hacia": [
+"towards",
+""
+],
+"tras": [
+"after, behind",
+""
+],
+"antes": [
+"before",
+""
+],
+"además": [
+"moreover, in addition",
+""
+],
+"también": [
+"also",
+""
+],
+"donde": [
+"where",
+""
+],
+"quien": [
+"who, whoever",
+""
+],
+"quienes": [
+"those who",
+""
+],
+"cualquier": [
+"any",
+""
+],
+"cualquiera": [
+"any one, anybody",
+""
+],
+"todos": [
+"all, everyone",
+""
+],
+"toda": [
+"all, every (fem.)",
+"*toda maniobra* = every manoeuvre."
+],
+"otro": [
+"another, other",
+""
+],
+"otra": [
+"another (fem.)",
+""
+],
+"otros": [
+"others",
+""
+],
+"demás": [
+"the others, the rest",
+"*los demás usuarios* = the other road users."
+],
+"varios": [
+"several",
+""
+],
+"mismo": [
+"same",
+""
+],
+"ya": [
+"already",
+"*ya no existe* = no longer exists."
+],
+"casos": [
+"cases",
+""
+],
+"caso": [
+"case",
+"*en ningún caso* = under no circumstances."
+],
+"supuestos": [
+"cases, situations provided for in law",
+""
+],
+"previstos": [
+"provided for, foreseen (in the rules)",
+""
+],
+"determinados": [
+"certain, specified",
+""
+],
+"correspondiente": [
+"corresponding, relevant",
+""
+],
+"corresponda": [
+"corresponds, applies",
+""
+],
+"procede": [
+"is appropriate, applies",
+"*si procede* = where applicable."
+],
+"proceda": [
+"is appropriate (subjunctive)",
+""
+],
+"conviene": [
+"it is advisable",
+""
+],
+"necesario": [
+"necessary",
+""
+],
+"posible": [
+"possible",
+""
+],
+"suficiente": [
+"sufficient, enough",
+""
+],
+"adecuada": [
+"suitable, appropriate",
+""
+],
+"adecuado": [
+"suitable, appropriate",
+""
+],
+"correcta": [
+"correct",
+""
+],
+"legal": [
+"legal",
+""
+],
+"autoriza": [
+"authorises, entitles you to drive",
+""
+],
+"autorizados": [
+"authorised",
+""
+],
+"habilitados": [
+"set up for, designated",
+"*lugares habilitados* = designated places."
+],
+"específicos": [
+"specific",
+""
+],
+"especialmente": [
+"especially",
+""
+],
+"especiales": [
+"special",
+""
+],
+"velocidad": [
+"speed",
+""
+],
+"máxima": [
+"maximum",
+""
+],
+"máximo": [
+"maximum",
+""
+],
+"mínima": [
+"minimum",
+""
+],
+"límite": [
+"limit",
+""
+],
+"límites": [
+"limits",
+""
+],
+"superar": [
+"to exceed",
+""
+],
+"exceso": [
+"excess",
+"*exceso de velocidad* = speeding."
+],
+"reducir": [
+"to reduce",
+""
+],
+"reduce": [
+"reduces",
+""
+],
+"reducida": [
+"reduced",
+"*visibilidad reducida* = reduced visibility."
+],
+"aumentar": [
+"to increase",
+""
+],
+"aumenta": [
+"increases",
+""
+],
+"baja": [
+"low; (it) goes down",
+""
+],
+"mayores": [
+"older than, greater",
+""
+],
+"menores": [
+"under-age, minors; smaller",
+""
+],
+"menor": [
+"minor, smaller",
+""
+],
+"metros": [
+"metres",
+""
+],
+"km": [
+"kilometres",
+""
+],
+"kg": [
+"kilograms",
+""
+],
+"mma": [
+"MMA — maximum authorised mass",
+"Masa Máxima Autorizada. The number that decides which licence you need."
+],
+"itv": [
+"ITV — roadworthiness test",
+"Inspección Técnica de Vehículos."
+],
+"segundos": [
+"seconds",
+""
+],
+"horas": [
+"hours",
+""
+],
+"años": [
+"years",
+""
+],
+"edad": [
+"age",
+""
+],
+"puntos": [
+"points (on the licence)",
+""
+],
+"anchura": [
+"width",
+""
+],
+"potencia": [
+"power (of an engine)",
+""
+],
+"vía": [
+"road, highway (legal term for any public road)",
+""
+],
+"vías": [
+"roads",
+""
+],
+"carretera": [
+"road, highway (interurban)",
+""
+],
+"carreteras": [
+"roads",
+""
+],
+"convencionales": [
+"conventional (ordinary single-carriageway roads)",
+"*carretera convencional* — not a motorway."
+],
+"interurbanas": [
+"interurban (outside built-up areas)",
+""
+],
+"autopistas": [
+"motorways",
+""
+],
+"autovías": [
+"dual carriageways",
+""
+],
+"carriles": [
+"lanes",
+""
+],
+"marcas": [
+"markings",
+"*marcas viales* = road markings."
+],
+"viales": [
+"road- (adjective)",
+""
+],
+"aceras": [
+"pavements, sidewalks",
+""
+],
+"pasos": [
+"crossings",
+"*paso de peatones*, *paso a nivel*, *paso inferior*."
+],
+"inferiores": [
+"lower; underpasses",
+"*pasos inferiores* = underpasses."
+],
+"túneles": [
+"tunnels",
+""
+],
+"puentes": [
+"bridges",
+""
+],
+"curvas": [
+"bends, curves",
+""
+],
+"intersección": [
+"junction, intersection",
+""
+],
+"salidas": [
+"exits",
+""
+],
+"lugar": [
+"place",
+""
+],
+"lugares": [
+"places",
+""
+],
+"cerca": [
+"near, close",
+""
+],
+"derecha": [
+"right",
+""
+],
+"derecho": [
+"right(-hand); a right",
+""
+],
+"izquierda": [
+"left",
+""
+],
+"lateral": [
+"lateral, sideways",
+"*separación lateral* = lateral clearance when overtaking."
+],
+"laterales": [
+"side, lateral (plural)",
+""
+],
+"frontal": [
+"frontal, front",
+"*distancia frontal* = the gap to the vehicle in front."
+],
+"trasera": [
+"rear",
+""
+],
+"posterior": [
+"rear, back",
+""
+],
+"parte": [
+"part",
+""
+],
+"señal": [
+"sign",
+""
+],
+"señales": [
+"signs",
+""
+],
+"señalización": [
+"signing, signage",
+""
+],
+"señalizar": [
+"to signal, to indicate",
+"What you do with the indicator before a manoeuvre."
+],
+"semáforos": [
+"traffic lights",
+""
+],
+"agentes": [
+"(traffic) officers",
+"Their orders override every other sign."
+],
+"indicadores": [
+"indicators",
+"*indicadores de dirección* = direction indicators."
+],
+"luminosa": [
+"luminous, light-",
+"*señal luminosa* = light signal."
+],
+"amarilla": [
+"yellow (fem.)",
+""
+],
+"amarillo": [
+"yellow",
+""
+],
+"blanca": [
+"white (fem.)",
+""
+],
+"blanco": [
+"white",
+""
+],
+"blancas": [
+"white (fem. plural)",
+""
+],
+"verde": [
+"green",
+""
+],
+"negro": [
+"black",
+""
+],
+"auto": [
+"amber (in *amarillo-auto*)",
+"The official colour name for indicator amber."
+],
+"indicar": [
+"to indicate",
+""
+],
+"advertir": [
+"to warn, to give notice of",
+"A core duty: *advertir sus maniobras* = to signal your manoeuvres."
+],
+"observar": [
+"to look, to observe",
+""
+],
+"respetar": [
+"to respect, to comply with",
+""
+],
+"obedecerse": [
+"to be obeyed",
+""
+],
+"prioridad": [
+"priority, right of way",
+""
+],
+"preferencia": [
+"right of way",
+""
+],
+"usuarios": [
+"road users",
+"Everyone in traffic: drivers, pedestrians, cyclists, passengers."
+],
+"usuario": [
+"road user",
+""
+],
+"conductores": [
+"drivers",
+""
+],
+"peatones": [
+"pedestrians",
+""
+],
+"ciclistas": [
+"cyclists",
+""
+],
+"ciclos": [
+"cycles",
+""
+],
+"bicicletas": [
+"bicycles",
+""
+],
+"ciclomotores": [
+"mopeds",
+""
+],
+"motocicletas": [
+"motorcycles",
+""
+],
+"cuadriciclos": [
+"quadricycles",
+""
+],
+"ligeros": [
+"light (weight class)",
+""
+],
+"turismos": [
+"passenger cars",
+""
+],
+"conjuntos": [
+"vehicle combinations",
+""
+],
+"pasajeros": [
+"passengers",
+""
+],
+"personas": [
+"people",
+""
+],
+"conducir": [
+"to drive",
+""
+],
+"circula": [
+"is driving along, travels",
+""
+],
+"conductor": [
+"driver",
+""
+],
+"seguridad": [
+"safety; security",
+"*distancia de seguridad*, *cinturón de seguridad*."
+],
+"peligro": [
+"danger",
+""
+],
+"riesgo": [
+"risk",
+""
+],
+"riesgos": [
+"risks",
+""
+],
+"precaución": [
+"caution",
+""
+],
+"extremar": [
+"to take extra care with",
+"*extremar la precaución* = to be extremely careful."
+],
+"atención": [
+"attention",
+""
+],
+"visibilidad": [
+"visibility",
+""
+],
+"adherencia": [
+"grip, road holding",
+""
+],
+"condiciones": [
+"conditions",
+""
+],
+"circunstancias": [
+"circumstances",
+""
+],
+"circunstancial": [
+"temporary, circumstantial",
+"*carril adicional circunstancial* = temporary extra lane."
+],
+"accidente": [
+"accident",
+""
+],
+"detenerse": [
+"to come to a stop",
+""
+],
+"detener": [
+"to stop (something)",
+""
+],
+"detenido": [
+"stopped, halted",
+""
+],
+"inmovilización": [
+"immobilisation, bringing to a standstill",
+""
+],
+"parada": [
+"stop (under 2 minutes, driver stays)",
+"One of three distinct legal terms: *parada*, *detención*, *estacionamiento*."
+],
+"estacionamiento": [
+"parking",
+""
+],
+"estacionar": [
+"to park",
+""
+],
+"maniobras": [
+"manoeuvres",
+""
+],
+"adelantamiento": [
+"overtaking (the noun)",
+""
+],
+"frenar": [
+"to brake",
+""
+],
+"frena": [
+"brakes (verb)",
+""
+],
+"bruscamente": [
+"abruptly, sharply",
+""
+],
+"bruscas": [
+"abrupt, sharp (plural)",
+""
+],
+"reacción": [
+"reaction",
+"*distancia de reacción* = the distance covered before you act."
+],
+"mantener": [
+"to keep, to maintain",
+""
+],
+"mantiene": [
+"keeps, maintains",
+""
+],
+"dejar": [
+"to leave, to allow",
+""
+],
+"seguir": [
+"to follow, to continue",
+""
+],
+"usar": [
+"to use",
+""
+],
+"usarse": [
+"to be used",
+""
+],
+"usa": [
+"uses",
+""
+],
+"utilizar": [
+"to use",
+""
+],
+"realiza": [
+"carries out",
+""
+],
+"actúa": [
+"acts, proceeds",
+""
+],
+"considera": [
+"considers, is deemed",
+"*no se considera adelantamiento* = is not deemed to be overtaking."
+],
+"existe": [
+"exists, there is",
+""
+],
+"sustituye": [
+"replaces",
+""
+],
+"suele": [
+"usually is, tends to be",
+""
+],
+"va": [
+"goes",
+""
+],
+"revisar": [
+"to check, to inspect",
+""
+],
+"formación": [
+"training, education",
+""
+],
+"servicio": [
+"service",
+"*freno de servicio* = the main brake; *en servicio urgente* = on an emergency call."
+],
+"servicios": [
+"services",
+""
+],
+"pruebas": [
+"tests",
+""
+],
+"instrucciones": [
+"instructions",
+""
+],
+"normas": [
+"rules",
+""
+],
+"norma": [
+"rule",
+""
+],
+"primero": [
+"first",
+""
+],
+"tipo": [
+"type",
+""
+],
+"contacto": [
+"contact; the ignition",
+""
+],
+"conectada": [
+"connected",
+"*baliza V-16 conectada* = the connected emergency beacon."
+],
+"noche": [
+"night",
+""
+],
+"niebla": [
+"fog",
+""
+],
+"intensa": [
+"heavy, intense",
+""
+],
+"humo": [
+"smoke",
+""
+],
+"aire": [
+"air",
+"*aire espirado* = exhaled breath, for the alcohol test."
+],
+"alcohol": [
+"alcohol",
+""
+],
+"drogas": [
+"drugs",
+""
+],
+"fatiga": [
+"fatigue",
+""
+],
+"cinturón": [
+"seat belt",
+""
+],
+"chaleco": [
+"reflective vest",
+""
+],
+"neumáticos": [
+"tyres",
+""
+],
+"aceite": [
+"oil",
+""
+],
+"batería": [
+"battery",
+""
+],
+"presión": [
+"pressure",
+""
+],
+"desgaste": [
+"wear",
+""
+],
+"consumo": [
+"fuel consumption",
+""
+],
+"emisiones": [
+"emissions",
+""
+],
+"marchas": [
+"gears",
+"*marchas largas* = high gears."
+],
+"buen": [
+"good",
+"*en buen estado* = in good condition."
+],
+"mala": [
+"bad, poor",
+""
+],
+"cambio": [
+"change",
+"*cambio de rasante*, *cambio de sentido*, *cambio de dirección*."
+],
+"sus": [
+"his, her, its, their",
+""
+],
+"su": [
+"his, her, its, their, your",
+""
+],
+"el": [
+"the (m.)",
+""
+],
+"la": [
+"the (f.)",
+""
+],
+"los": [
+"the (m. pl.)",
+""
+],
+"las": [
+"the (f. pl.)",
+""
+],
+"un": [
+"a, one",
+""
+],
+"una": [
+"a, one (f.)",
+""
+],
+"unos": [
+"some",
+""
+],
+"unas": [
+"some (f.)",
+""
+],
+"de": [
+"of, from",
+""
+],
+"del": [
+"of the",
+""
+],
+"a": [
+"to, at",
+""
+],
+"al": [
+"to the",
+""
+],
+"en": [
+"in, on",
+""
+],
+"con": [
+"with",
+""
+],
+"por": [
+"by, through, along, because of",
+"*por la izquierda* = on/along the left."
+],
+"para": [
+"for, in order to",
+""
+],
+"sobre": [
+"on, about",
+""
+],
+"bajo": [
+"under",
+""
+],
+"ante": [
+"before, faced with",
+""
+],
+"durante": [
+"during",
+""
+],
+"mediante": [
+"by means of",
+""
+],
+"contra": [
+"against",
+""
+],
+"y": [
+"and",
+""
+],
+"e": [
+"and (before i-)",
+""
+],
+"o": [
+"or",
+""
+],
+"u": [
+"or (before o-)",
+""
+],
+"no": [
+"no, not",
+""
+],
+"sí": [
+"yes; indeed",
+""
+],
+"lo": [
+"it, the (neuter)",
+""
+],
+"le": [
+"to him/her",
+""
+],
+"les": [
+"to them",
+""
+],
+"nos": [
+"us",
+""
+],
+"me": [
+"me",
+""
+],
+"te": [
+"you",
+""
+],
+"este": [
+"this",
+""
+],
+"esta": [
+"this (f.)",
+""
+],
+"estos": [
+"these",
+""
+],
+"estas": [
+"these (f.)",
+""
+],
+"ese": [
+"that",
+""
+],
+"esa": [
+"that (f.)",
+""
+],
+"esto": [
+"this (thing)",
+""
+],
+"eso": [
+"that (thing)",
+""
+],
+"él": [
+"he, him",
+""
+],
+"ella": [
+"she, her",
+""
+],
+"ellos": [
+"they",
+""
+],
+"usted": [
+"you (formal)",
+""
+],
+"más": [
+"more, most",
+""
+],
+"muy": [
+"very",
+""
+],
+"poco": [
+"little, few",
+""
+],
+"mucho": [
+"much, a lot",
+""
+],
+"bien": [
+"well",
+""
+],
+"mal": [
+"badly",
+""
+],
+"nunca": [
+"never",
+""
+],
+"jamás": [
+"never (emphatic)",
+""
+],
+"ninguno": [
+"none, not one",
+""
+],
+"ninguna": [
+"no, none (f.)",
+""
+],
+"ningún": [
+"no, not any",
+""
+],
+"alguno": [
+"some, any",
+""
+],
+"alguna": [
+"some, any (f.)",
+""
+],
+"algún": [
+"some, any",
+""
+],
+"cada": [
+"each, every",
+""
+],
+"ambos": [
+"both",
+""
+],
+"ningunos": [
+"none",
+""
+],
+"qué": [
+"what",
+""
+],
+"cuál": [
+"which",
+""
+],
+"cuáles": [
+"which (pl.)",
+""
+],
+"cómo": [
+"how",
+""
+],
+"cuándo": [
+"when",
+""
+],
+"dónde": [
+"where",
+""
+],
+"cuánto": [
+"how much",
+""
+],
+"cuántos": [
+"how many",
+""
+],
+"cuánta": [
+"how much (f.)",
+""
+],
+"cuántas": [
+"how many (f.)",
+""
+],
+"por qué": [
+"why",
+""
+],
+"porque": [
+"because",
+""
+],
+"pues": [
+"since, well",
+""
+],
+"así": [
+"thus, like this",
+""
+],
+"entonces": [
+"then",
+""
+],
+"luego": [
+"then, later",
+""
+],
+"después": [
+"after, afterwards",
+""
+],
+"todavía": [
+"still",
+""
+],
+"aún": [
+"still, yet",
+""
+],
+"casi": [
+"almost",
+""
+],
+"incluso": [
+"even, including",
+""
+],
+"sólo": [
+"only",
+""
+],
+"tanto": [
+"so much",
+""
+],
+"tan": [
+"so",
+""
+],
+"vez": [
+"time, occasion",
+""
+],
+"veces": [
+"times",
+""
+],
+"estar": [
+"to be (state)",
+""
+],
+"haber": [
+"to have (auxiliary)",
+""
+],
+"tener": [
+"to have",
+""
+],
+"hacer": [
+"to do, to make",
+""
+],
+"poder": [
+"to be able to, may",
+""
+],
+"deber": [
+"must, to owe",
+""
+],
+"ir": [
+"to go",
+""
+],
+"venir": [
+"to come",
+""
+],
+"dar": [
+"to give",
+""
+],
+"poner": [
+"to put",
+""
+],
+"saber": [
+"to know",
+""
+],
+"querer": [
+"to want",
+""
+],
+"decir": [
+"to say",
+""
+],
+"ver": [
+"to see",
+""
+],
+"salir": [
+"to leave, to go out",
+""
+],
+"pasar": [
+"to pass, to happen",
+""
+],
+"quedar": [
+"to remain, to be left",
+""
+],
+"producir": [
+"to produce, to cause",
+""
+],
+"evitarse": [
+"to be avoided",
+""
+],
+"primera": [
+"first (f.)",
+""
+],
+"segundo": [
+"second",
+""
+],
+"última": [
+"last (f.)",
+""
+],
+"último": [
+"last",
+""
+],
+"nuevo": [
+"new",
+""
+],
+"viejo": [
+"old",
+""
+],
+"grande": [
+"big, large",
+""
+],
+"pequeño": [
+"small",
+""
+],
+"largo": [
+"long",
+""
+],
+"corto": [
+"short",
+""
+],
+"alto": [
+"tall, high",
+""
+],
+"ancho": [
+"wide",
+""
+],
+"estrecho": [
+"narrow",
+""
+],
+"fácil": [
+"easy",
+""
+],
+"difícil": [
+"difficult",
+""
+],
+"importante": [
+"important",
+""
+],
+"distinto": [
+"different",
+""
+],
+"igual": [
+"equal, the same",
+""
+],
+"propio": [
+"own",
+""
+],
+"libre": [
+"free, clear",
+""
+],
+"lleno": [
+"full",
+""
+],
+"vacío": [
+"empty",
+""
+],
+"limpio": [
+"clean",
+""
+],
+"sucio": [
+"dirty",
+""
+],
+"seco": [
+"dry",
+""
+],
+"frío": [
+"cold",
+""
+],
+"caliente": [
+"hot",
+""
+],
+"duro": [
+"hard",
+""
+],
+"blando": [
+"soft",
+""
+],
+"fuerte": [
+"strong, heavy",
+""
+],
+"débil": [
+"weak",
+""
+],
+"rápido": [
+"fast",
+""
+],
+"lejos": [
+"far",
+""
+],
+"arriba": [
+"above, up",
+""
+],
+"abajo": [
+"below, down",
+""
+],
+"delante": [
+"in front",
+""
+],
+"detrás": [
+"behind",
+""
+],
+"encima": [
+"on top, above",
+""
+],
+"debajo": [
+"underneath",
+""
+],
+"junto": [
+"next to, together",
+""
+],
+"alrededor": [
+"around",
+""
+],
+"través": [
+"across",
+"*a través de* = through."
+],
+"frente": [
+"front; opposite",
+"*frente a* = facing."
+],
+"lado": [
+"side",
+""
+],
+"lados": [
+"sides",
+""
+],
+"forma": [
+"way, form",
+"*de forma segura* = safely."
+],
+"manera": [
+"way, manner",
+""
+],
+"medio": [
+"middle; means",
+""
+],
+"final": [
+"end",
+""
+],
+"principio": [
+"beginning",
+""
+],
+"momento": [
+"moment",
+""
+],
+"tiempo": [
+"time; weather",
+""
+],
+"día": [
+"day",
+""
+],
+"días": [
+"days",
+""
+],
+"zona": [
+"zone, area",
+""
+],
+"zonas": [
+"zones",
+""
+],
+"espacio": [
+"space",
+""
+],
+"nivel": [
+"level",
+""
+],
+"estado": [
+"condition, state",
+""
+],
+"motivo": [
+"reason",
+""
+],
+"causa": [
+"cause",
+""
+],
+"causas": [
+"causes",
+""
+],
+"efecto": [
+"effect",
+""
+],
+"efectos": [
+"effects",
+""
+],
+"consecuencia": [
+"consequence",
+""
+],
+"resultado": [
+"result",
+""
+],
+"número": [
+"number",
+""
+],
+"cantidad": [
+"amount",
+""
+],
+"mitad": [
+"half",
+""
+],
+"doble": [
+"double",
+""
+],
+"total": [
+"total",
+""
+],
+"cuenta": [
+"account",
+"*tener en cuenta* = to bear in mind."
+],
+"vehículo": [
+"vehicle",
+"DGT: *aparato preparado para circular por vías, calles, carreteras y terrenos de todo tipo*."
+],
+"vehículos": [
+"vehicles",
+""
+],
+"motor": [
+"engine; motor",
+""
+],
+"distancia": [
+"distance",
+""
+],
+"luz": [
+"light, lamp",
+""
+],
+"luces": [
+"lights, lamps",
+""
+],
+"emergencia": [
+"emergency",
+""
+],
+"permiso": [
+"licence, permit",
+""
+],
+"carga": [
+"load, cargo",
+""
+],
+"dirección": [
+"direction; steering",
+""
+],
+"tráfico": [
+"traffic",
+""
+],
+"seguro": [
+"insurance; safe",
+""
+],
+"posición": [
+"position",
+""
+],
+"conducción": [
+"driving",
+""
+],
+"circulación": [
+"traffic, circulation; *permiso de circulación* = vehicle registration",
+""
+],
+"sistema": [
+"system",
+""
+],
+"alcance": [
+"range, reach",
+"*luz de corto/largo alcance* = dipped/main beam."
+],
+"paso": [
+"passage, crossing; right of way",
+"*ceder el paso* = to give way."
+],
+"detención": [
+"coming to a halt (forced by traffic or a rule)",
+"One of the three stopping terms."
+],
+"inmovilizado": [
+"immobilised, stationary",
+""
+],
+"animales": [
+"animals",
+""
+],
+"brazo": [
+"arm",
+""
+],
+"roja": [
+"red (f.)",
+""
+],
+"rojo": [
+"red",
+""
+],
+"antiniebla": [
+"fog (lamp)",
+""
+],
+"delantera": [
+"front (f.)",
+""
+],
+"falta": [
+"offence; lack",
+""
+],
+"grave": [
+"serious",
+""
+],
+"graves": [
+"serious (pl.)",
+""
+],
+"específicas": [
+"specific (f.)",
+""
+],
+"ejecutar": [
+"to carry out, to execute",
+""
+],
+"decisión": [
+"decision",
+"*con decisión* = decisively."
+],
+"volver": [
+"to return, to go back",
+""
+],
+"invadir": [
+"to encroach on, to cross into",
+""
+],
+"indebidamente": [
+"improperly, unduly",
+""
+],
+"entorno": [
+"surroundings",
+""
+],
+"necesidad": [
+"need",
+""
+],
+"voluntaria": [
+"voluntary",
+""
+],
+"inferior": [
+"lower; *paso inferior* = underpass",
+""
+],
+"minutos": [
+"minutes",
+""
+],
+"abandonar": [
+"to leave, to abandon",
+""
+],
+"línea": [
+"line",
+""
+],
+"descarga": [
+"unloading",
+""
+],
+"bus": [
+"bus",
+"*carril bus* = bus lane."
+],
+"autorización": [
+"authorisation",
+""
+],
+"reservados": [
+"reserved",
+""
+],
+"accionar": [
+"to apply, to operate (a control)",
+""
+],
+"básicas": [
+"basic (f. pl.)",
+""
+],
+"regla": [
+"rule",
+"*regla PAS* = Protect, Alert, Assist."
+],
+"antelación": [
+"advance notice",
+"*con antelación* = in good time."
+],
+"prioritaria": [
+"priority (f.)",
+"*vía prioritaria* = priority road; *vehículo prioritario* = emergency vehicle."
+],
+"pie": [
+"foot",
+"*a pie* = on foot."
+],
+"bicicleta": [
+"bicycle",
+""
+],
+"persona": [
+"person",
+""
+],
+"separación": [
+"separation, clearance",
+""
+],
+"reglamentariamente": [
+"as laid down in the regulations",
+""
+],
+"relación": [
+"ratio; relationship",
+""
+],
+"peso": [
+"weight",
+""
+],
+"triciclos": [
+"tricycles",
+""
+],
+"automóviles": [
+"motor vehicles (cars, lorries, buses)",
+""
+],
+"conjunto": [
+"combination, set",
+""
+],
+"cumplen": [
+"comply with, meet",
+""
+],
+"cumplir": [
+"to comply with, to meet",
+""
+],
+"prueba": [
+"test",
+""
+],
+"españa": [
+"Spain",
+""
+],
+"autorizadas": [
+"authorised (f. pl.)",
+""
+],
+"transporte": [
+"transport",
+""
+],
+"novel": [
+"novice",
+"*conductor novel* = driver in the first year."
+],
+"primer": [
+"first",
+""
+],
+"perder": [
+"to lose",
+""
+],
+"saldo": [
+"balance (of points)",
+""
+],
+"recuperación": [
+"recovery, getting back",
+""
+],
+"curso": [
+"course",
+""
+],
+"realizar": [
+"to carry out, to do",
+""
+],
+"tarjeta": [
+"card",
+"*tarjeta ITV* = the vehicle inspection card."
+],
+"comprobarse": [
+"to be checked",
+""
+],
+"obligaciones": [
+"duties, obligations",
+""
+],
+"móvil": [
+"mobile (phone)",
+""
+],
+"orden": [
+"order",
+""
+],
+"verticales": [
+"vertical",
+"*señales verticales* = upright signs on posts."
+],
+"peatonales": [
+"pedestrian (adj.)",
+""
+],
+"elementos": [
+"elements, items",
+""
+],
+"movilidad": [
+"mobility",
+"*vehículo de movilidad personal (VMP)* = e-scooter class."
+],
+"reglamentarias": [
+"regulatory, laid down by regulation",
+""
+],
+"grupo": [
+"group",
+""
+],
+"aplicable": [
+"applicable",
+""
+],
+"ocupar": [
+"to occupy, to take up",
+""
+],
+"señalizadas": [
+"signposted",
+""
+],
+"mejor": [
+"better, best",
+""
+],
+"tasa": [
+"rate, level",
+"*tasa de alcohol* = blood/breath alcohol level."
+],
+"espirado": [
+"exhaled",
+"*aire espirado* = exhaled breath."
+],
+"profesionales": [
+"professional (drivers)",
+""
+],
+"triángulos": [
+"warning triangles",
+"Replaced by the connected V-16 beacon from 1 Jan 2026."
+],
+"ubicación": [
+"location",
+""
+],
+"peligrosas": [
+"dangerous (f. pl.)",
+""
+],
+"agua": [
+"water",
+""
+],
+"suavemente": [
+"gently, smoothly",
+""
+],
+"cadenas": [
+"chains",
+""
+],
+"movimientos": [
+"movements",
+""
+],
+"densa": [
+"dense, thick",
+""
+],
+"sujetar": [
+"to hold firmly, to secure",
+""
+],
+"firmemente": [
+"firmly",
+""
+],
+"avería": [
+"breakdown, fault",
+""
+],
+"aparece": [
+"appears, sets in",
+""
+],
+"recomienda": [
+"recommends",
+""
+],
+"distracciones": [
+"distractions",
+""
+],
+"mayor": [
+"greater, older",
+""
+],
+"segura": [
+"safe (f.)",
+""
+],
+"medicamentos": [
+"medicines",
+""
+],
+"consultar": [
+"to consult",
+""
+],
+"infracción": [
+"offence, infringement",
+""
+],
+"frecuentes": [
+"frequent",
+""
+],
+"proteger": [
+"to protect",
+"P of the PAS rule."
+],
+"avisar": [
+"to alert, to call for help",
+"A of the PAS rule."
+],
+"causar": [
+"to cause",
+""
+],
+"ponerse": [
+"to put on (clothing)",
+""
+],
+"datos": [
+"data, details",
+""
+],
+"respira": [
+"breathes",
+""
+],
+"indicación": [
+"instruction, indication",
+""
+],
+"auxilio": [
+"assistance, aid",
+"*deber de auxilio* = the duty to help."
+],
+"ayuda": [
+"help",
+""
+],
+"presencia": [
+"presence",
+""
+],
+"hacerse": [
+"to be done",
+""
+],
+"tres": [
+"three",
+""
+],
+"dos": [
+"two",
+""
+],
+"cuatro": [
+"four",
+""
+],
+"cinco": [
+"five",
+""
+],
+"seis": [
+"six",
+""
+],
+"siete": [
+"seven",
+""
+],
+"ocho": [
+"eight",
+""
+],
+"nueve": [
+"nine",
+""
+],
+"diez": [
+"ten",
+""
+],
+"quince": [
+"fifteen",
+""
+],
+"veinte": [
+"twenty",
+""
+],
+"cien": [
+"a hundred",
+""
+],
+"ciento": [
+"hundred",
+""
+],
+"mil": [
+"thousand",
+""
+],
+"kw": [
+"kW — kilowatts",
+""
+],
+"mg": [
+"mg — milligrams",
+""
+],
+"cm": [
+"cm — centimetres",
+""
+],
+"vmp": [
+"VMP — personal mobility vehicle",
+"e.g. an electric scooter."
+],
+"adas": [
+"ADAS — driver assistance systems",
+""
+],
+"abs": [
+"ABS — anti-lock braking system",
+""
+],
+"esp": [
+"ESP/ESC — electronic stability control",
+""
+],
+"sri": [
+"SRI — child restraint system",
+""
+],
+"vao": [
+"VAO — high-occupancy vehicle (lane)",
+""
+],
+"zbe": [
+"ZBE — low-emission zone",
+""
+],
+"pas": [
+"PAS — Proteger, Avisar, Socorrer",
+""
+],
+"rcp": [
+"CPR — cardiopulmonary resuscitation",
+""
+]
+}
