@@ -49,7 +49,7 @@ Then open `http://localhost:8123`. It must be served over http — opening
 |---|---|
 | **324** vocabulary entries | your own 297-word list, corrected, plus DGT's own definitions |
 | **222** exam-fact sentences | every word tappable for its meaning |
-| **791** official DGT questions | scraped from `revista.dgt.es`, with verified answers and photos (6 more are quarantined as out of date) |
+| **840** official DGT questions | from `revista.dgt.es` (issues 224–279) plus the nº240 supplement, with verified answers and photos (6 more are quarantined as out of date) |
 | **508** practice questions | generated from the manuals, each citing its source |
 | **2,927** real exam questions | authentic wording, used for comprehension training |
 | **610** dictionary entries | powers tap-any-word translation everywhere |
@@ -151,6 +151,7 @@ shows you a diff before it writes anything, keeps a snapshot, and can be undone.
 - **Manual del Permiso B en Lectura Fácil** — DGT, 2023 (the syllabus spine)
 - **Manual II, Cuestiones de Seguridad Vial** — DGT, 2025 (glossary and depth)
 - **Revista Tráfico y Seguridad Vial, tests** — DGT, issues 224–279 (the official questions)
+- **Suplemento Especial Test nº240** — DGT, 2017, questions selected by the Subdirección Adjunta de Conocimiento Vial (49 of its 50; one needs a photo that could not be paired reliably)
 - **Resumen DGT Permiso B, 222 frases** — practicatest.com, 2026 edition
 - Personal vocabulary list and an Anki deck of real exam wording
 

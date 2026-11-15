@@ -377,7 +377,8 @@ for q in n240:
     t, conf = classify(q["q"] + " " + " ".join(q["options"]))
     questions.append({
         "id": "q" + sid("n240", q["n"]), "q": q["q"], "options": q["options"],
-        "answer": q["answer"], "topic": t or 1, "topicConf": conf, "img": None,
+        "answer": q["answer"], "topic": t or 1, "topicConf": conf,
+        "img": (f"n240/n240-{q['n']:02d}.webp" if q.get("img") else None),
         "origin": "official", "src": f"Suplemento DGT nº240 · pregunta {q['n']} ({q['cat']})", "year": "2017",
     })
 
@@ -547,7 +548,7 @@ for n, slug, title, sub, icon, p0, p1 in TOPICS:
                    "keywords": list(TOPIC_KEYS.get(n, {}))[:25]})
 
 meta = {
-    "contentVersion": 2,
+    "contentVersion": 3,
     "built": "2026-11-15",
     "exam": {"questions": 30, "maxWrong": 3},
     "sources": [
